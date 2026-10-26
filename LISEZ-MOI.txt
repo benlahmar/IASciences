@@ -1,0 +1,45 @@
+LE CARNET — IA POUR LES SCIENCES (MASTER 1, 48 H)
+===================================================
+
+1) INSTALLATION
+   Décompresser l'archive et conserver tous les fichiers dans le dossier Le_Carnet_IA_Sciences.
+   Dans ce dossier, ouvrir un terminal puis exécuter :
+       python -m http.server 8000
+   Ouvrir ensuite : http://localhost:8000/index.html
+   (Sur Windows, la commande peut être : py -m http.server 8000)
+
+   La lecture simple des fichiers HTML peut fonctionner en ouvrant index.html directement,
+   mais l'enregistrement de progression entre pages et l'accès au microphone sont plus fiables
+   depuis localhost (ou un site HTTPS).
+
+2) CONTENU
+   index.html       Accueil du cours et huit chapitres
+   dashboard.html   Tableau de bord de progression + compétences + ressources
+   quiz.html        Autoévaluation, 40 questions corrigées (5 par chapitre)
+   chapitre-*.html  Cours, TD et TP, navigation circulaire et lecture guidée
+   notebooks/       10 notebooks Jupyter (.ipynb), à ouvrir dans Jupyter ou Colab
+   *-a-la-voix.html Laboratoires vocaux et simulations scientifiques
+
+3) PROGRESSION ET PROTECTION DES DONNÉES
+   Dans chaque chapitre, cliquer « Marquer comme étudié » en fin de Cours, TD ou TP.
+   Ces états se retrouvent dans dashboard.html ; on peut aussi les modifier directement.
+   Les objectifs C1 à C8 sont auto-déclarés, non validés automatiquement.
+   Les réponses aux quiz sont évaluées localement, et les résultats restent dans le navigateur.
+   Aucun compte, serveur de suivi, sauvegarde distante ou notation officielle n'est inclus.
+   Le navigateur peut effacer les données locales à tout moment. Exporter un JSON via le
+   tableau de bord pour conserver une copie ou migrer à un autre appareil.
+
+4) NOTEBOOKS
+   Ouvrir un fichier .ipynb dans Jupyter Notebook, JupyterLab ou Google Colab.
+   Dépendances courantes : numpy, pandas, matplotlib, scikit-learn, scipy.
+   Les notebooks suivent les codes du cours, réorganisés pour l'exécution autonome.
+   Certains jeux de données sont simulés : ce sont des activités pédagogiques,
+   et non des résultats expérimentaux de recherche.
+
+5) LABORATOIRES VOCAUX
+   Autoriser le microphone dans le navigateur (fonctionnalité dépendante du moteur Web Speech).
+   Saisie et commandes manuelles restent disponibles si la reconnaissance n'est pas prise en charge.
+
+6) MAQUETTE HORAIRE
+   18 heures de CM, 10 heures de TD, 20 heures de TP = 48 heures.
+   Les ateliers facultatifs hors horaire sont clairement indiqués dans leurs chapitres.

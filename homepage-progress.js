@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById('homeProgressTitle');if(e&&window.IAScience)e.textContent=window.IAScience.stats().count+' / 24 espaces';})();
