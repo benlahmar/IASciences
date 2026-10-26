@@ -17,7 +17,7 @@ LE CARNET — IA POUR LES SCIENCES (MASTER 1, 48 H)
    dashboard.html   Tableau de bord de progression + compétences + ressources
    quiz.html        Autoévaluation, 40 questions corrigées (5 par chapitre)
    chapitre-*.html  Cours, TD et TP, navigation circulaire et lecture guidée
-   notebooks/       10 notebooks Jupyter (.ipynb), à ouvrir dans Jupyter ou Colab
+   notebooks/       12 notebooks Jupyter (.ipynb), à ouvrir dans Jupyter ou Colab
    *-a-la-voix.html Laboratoires vocaux et simulations scientifiques
 
 3) PROGRESSION ET PROTECTION DES DONNÉES
@@ -30,11 +30,17 @@ LE CARNET — IA POUR LES SCIENCES (MASTER 1, 48 H)
    tableau de bord pour conserver une copie ou migrer à un autre appareil.
 
 4) NOTEBOOKS
-   Ouvrir un fichier .ipynb dans Jupyter Notebook, JupyterLab ou Google Colab.
-   Dépendances courantes : numpy, pandas, matplotlib, scikit-learn, scipy.
-   Les notebooks suivent les codes du cours, réorganisés pour l'exécution autonome.
+   Ouvrir un fichier .ipynb dans Jupyter Notebook, JupyterLab ou Google Colab
+   (chaque notebook a un bouton « Ouvrir dans Colab »).
+   Installation locale des dépendances : pip install -r requirements.txt
+   (numpy, pandas, matplotlib, scikit-learn, scipy ; torch pour ch04-tp2 uniquement).
+   Chaque notebook contient explications, démonstrations, exercices « à compléter »
+   (cellules avec ...) et corrigés repliés sous « Voir le corrigé ».
+   Jeux réels intégrés à scikit-learn : Iris, Wine, diabetes, breast cancer, digits.
    Certains jeux de données sont simulés : ce sont des activités pédagogiques,
    et non des résultats expérimentaux de recherche.
+   L'atelier ch05-atelier-llm fonctionne sans clé API (réponses simulées) ;
+   l'appel à un LLM réel est facultatif.
 
 5) LABORATOIRES VOCAUX
    Autoriser le microphone dans le navigateur (fonctionnalité dépendante du moteur Web Speech).

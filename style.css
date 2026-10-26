@@ -14,3 +14,14 @@ body:has(.reading-navigation) .chapter-workspace{padding-bottom:125px}body:has(.
 @media print{.reading-navigation{display:none!important}}
 /* Repères personnels de progression intégrés aux panneaux circulaires */
 .finish-part{display:flex;justify-content:space-between;gap:18px;align-items:center;margin:36px 0 12px;padding:20px 22px;background:var(--sheet);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px}.finish-part h3{font-size:22px;margin:5px 0}.finish-part p{font-size:13px;line-height:1.65;margin:0;color:var(--muted)}.finish-part.done{border-left-color:#298363;background:var(--green-bg)}.finish-btn{flex-shrink:0;font-weight:650;min-width:165px}.finish-part.done .finish-btn{background:#236c53;color:white;border-color:#236c53}@media(max-width:650px){.finish-part{flex-direction:column;align-items:stretch}.finish-btn{width:100%}}@media print{.finish-part{display:none}}
+
+/* Démonstrations pas à pas, tableaux compacts et lectures des démonstrations interactives */
+.worked{border:1px solid var(--line);border-left:4px solid var(--panel-color);border-radius:0 10px 10px 0;padding:20px 24px;margin:25px 0;background:var(--sheet)}.worked>strong:first-child{display:block;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:var(--panel-color);margin-bottom:8px}.worked ol,.worked ul{padding-left:22px}.worked li{margin:6px 0}
+.mini-table{border-collapse:collapse;margin:14px 0;font-size:14px;font-variant-numeric:tabular-nums}.mini-table th,.mini-table td{border:1px solid var(--line);padding:7px 11px;text-align:center}.mini-table th{background:var(--panel-bg);font-weight:600}.mini-table td.ok{background:var(--green-bg)}.mini-table td.ko{background:var(--ochre-bg)}
+.table-scroll{overflow-x:auto;max-width:100%}
+.demo-readout{font-size:14px;line-height:1.6;margin:12px 0 0;color:var(--ink)}.demo-side{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}.demo-side>*{flex:1 1 260px}
+.kfold{display:grid;grid-template-columns:auto repeat(5,1fr);gap:4px;font-size:12px;margin:16px 0;align-items:center}.kfold span{padding:6px 4px;text-align:center;border-radius:4px;background:var(--blue-bg)}.kfold span.val{background:#c77b2e;color:#fff}.kfold b{font-weight:600;padding-right:8px;white-space:nowrap}
+.nb-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+body[data-theme=dark] .worked{background:var(--sheet)}
+@media print{.demo-controls,.demo canvas{display:none}}
+.bar{text-decoration:overline}
